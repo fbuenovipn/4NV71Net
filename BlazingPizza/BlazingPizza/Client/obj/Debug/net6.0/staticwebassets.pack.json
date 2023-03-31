@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets\\images\\icon-512.png"
     },
     {
+      "Id": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\images\\pizza-slice.svg",
+      "PackagePath": "staticwebassets\\images\\pizza-slice.svg"
+    },
+    {
       "Id": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\images\\pizzas\\bacon.jpg",
       "PackagePath": "staticwebassets\\images\\pizzas\\bacon.jpg"
     },

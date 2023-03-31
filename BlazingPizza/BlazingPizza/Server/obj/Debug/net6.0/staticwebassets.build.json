@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "93n+cxrAVYHSl01Ex9OqLNIiJMsz6Vw5q65u5+ZHXZo=",
+  "Hash": "koi+lx0c/aPIY44C5u5tS8U3x4AaQ9EOCHOUl3oG/KU=",
   "Source": "BlazingPizza.Server",
   "BasePath": "_content/BlazingPizza.Server",
   "Mode": "Default",
@@ -7135,6 +7135,23 @@
       "OriginalItemSpec": "wwwroot\\images\\icon-512.png"
     },
     {
+      "Identity": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\images\\logo.svg",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.svg"
+    },
+    {
       "Identity": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\images\\pizzas\\bacon.jpg",
       "SourceId": "BlazingPizza.Client",
       "SourceType": "Project",
@@ -7269,6 +7286,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\pizzas\\salad.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\images\\pizza-slice.svg",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/pizza-slice.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pizza-slice.svg"
     },
     {
       "Identity": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\wwwroot\\index.html",
