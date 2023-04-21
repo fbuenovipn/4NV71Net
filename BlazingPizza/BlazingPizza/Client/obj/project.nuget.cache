@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hih4maQEPOCHI5a957XHyiqBpL8D5fFx67YF9NMmuB6JUiP22lYuFSRQj8NLsLLonLXUT5MNJtCCg7hgBO2Beg==",
+  "dgSpecHash": "qkEH7z3fhmjSkBTI4PqxxzsijiSsDIQIvm0nX5oHKeDAqd5k34i0QBzNXaacp+pD0tp+YS8W/SyX7NxanToPHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\fbuen\\Documents\\.Net\\BlazingPizza\\BlazingPizza\\Client\\BlazingPizza.Client.csproj",
   "expectedPackageFiles": [
@@ -33,7 +33,7 @@
     "C:\\Users\\fbuen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\fbuen\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\fbuen\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\fbuen\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.15.nupkg.sha512"
+    "C:\\Users\\fbuen\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.16.nupkg.sha512"
   ],
   "logs": []
 }
