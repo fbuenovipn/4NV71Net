@@ -21,6 +21,30 @@ namespace BlazingPizza.Server.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BlazingPizza.Shared.Pizza", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Size")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SpecialId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SpecialId");
+
+                    b.ToTable("Pizzas");
+                });
+
             modelBuilder.Entity("BlazingPizza.Shared.PizzaSpecial", b =>
                 {
                     b.Property<int>("Id")
@@ -47,6 +71,74 @@ namespace BlazingPizza.Server.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Specials");
+                });
+
+            modelBuilder.Entity("BlazingPizza.Shared.PizzaTopping", b =>
+                {
+                    b.Property<int>("PizzaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ToppingId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PizzaId", "ToppingId");
+
+                    b.HasIndex("ToppingId");
+
+                    b.ToTable("PizzaTopping");
+                });
+
+            modelBuilder.Entity("BlazingPizza.Shared.Topping", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Toppings");
+                });
+
+            modelBuilder.Entity("BlazingPizza.Shared.Pizza", b =>
+                {
+                    b.HasOne("BlazingPizza.Shared.PizzaSpecial", "Special")
+                        .WithMany()
+                        .HasForeignKey("SpecialId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Special");
+                });
+
+            modelBuilder.Entity("BlazingPizza.Shared.PizzaTopping", b =>
+                {
+                    b.HasOne("BlazingPizza.Shared.Pizza", null)
+                        .WithMany("Toppings")
+                        .HasForeignKey("PizzaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BlazingPizza.Shared.Topping", "Topping")
+                        .WithMany()
+                        .HasForeignKey("ToppingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Topping");
+                });
+
+            modelBuilder.Entity("BlazingPizza.Shared.Pizza", b =>
+                {
+                    b.Navigation("Toppings");
                 });
 #pragma warning restore 612, 618
         }
